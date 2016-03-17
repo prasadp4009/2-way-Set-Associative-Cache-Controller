@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Dadu/OneDrive/Courses/ECE585_MSD_Teuscher/Homework/Homework4/IP/simX/Cache_2wsa/cache_2wsa_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="cache_2wsa_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="44" />
+   <wvobject fp_name="/cache_2wsa_tb/clock" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cache_2wsa_tb/addr_cpu" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_cpu[15:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_cpu[15:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffa500</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cache_2wsa_tb/uut/data_cpu" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_cpu[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_cpu[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffa500</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cache_2wsa_tb/uut/hit_w0" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">hit_w0</obj_property>
+      <obj_property name="ObjectShortName">hit_w0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cache_2wsa_tb/uut/hit_w1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">hit_w1</obj_property>
+      <obj_property name="ObjectShortName">hit_w1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cache_2wsa_tb/uut/vw0" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">vw0</obj_property>
+      <obj_property name="ObjectShortName">vw0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cache_2wsa_tb/uut/vw1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">vw1</obj_property>
+      <obj_property name="ObjectShortName">vw1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cache_2wsa_tb/uut/uw0" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">uw0</obj_property>
+      <obj_property name="ObjectShortName">uw0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cache_2wsa_tb/uut/uw1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">uw1</obj_property>
+      <obj_property name="ObjectShortName">uw1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cache_2wsa_tb/uut/dw0" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">dw0</obj_property>
+      <obj_property name="ObjectShortName">dw0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cache_2wsa_tb/uut/dw1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">dw1</obj_property>
+      <obj_property name="ObjectShortName">dw1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cache_2wsa_tb/uut/rtag0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rtag0[13:0]</obj_property>
+      <obj_property name="ObjectShortName">rtag0[13:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffff00</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cache_2wsa_tb/uut/rtag1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rtag1[13:0]</obj_property>
+      <obj_property name="ObjectShortName">rtag1[13:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cache_2wsa_tb/uut/rdata0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rdata0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rdata0[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cache_2wsa_tb/uut/rdata1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rdata1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rdata1[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cache_2wsa_tb/rd_cpu" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rd_cpu</obj_property>
+      <obj_property name="ObjectShortName">rd_cpu</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cache_2wsa_tb/uut/state" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">state[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cache_2wsa_tb/uut/index" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">index[2:0]</obj_property>
+      <obj_property name="ObjectShortName">index[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cache_2wsa_tb/uut/bytsel" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">bytsel[1:0]</obj_property>
+      <obj_property name="ObjectShortName">bytsel[1:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cache_2wsa_tb/uut/tagdata" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tagdata[10:0]</obj_property>
+      <obj_property name="ObjectShortName">tagdata[10:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cache_2wsa_tb/uut/ready_mem" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ready_mem</obj_property>
+      <obj_property name="ObjectShortName">ready_mem</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cache_2wsa_tb/uut/data_mem" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_mem[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_mem[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cache_2wsa_tb/uut/rd_mem" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rd_mem</obj_property>
+      <obj_property name="ObjectShortName">rd_mem</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cache_2wsa_tb/uut/wr_mem" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wr_mem</obj_property>
+      <obj_property name="ObjectShortName">wr_mem</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cache_2wsa_tb/uut/stall_cpu" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">stall_cpu</obj_property>
+      <obj_property name="ObjectShortName">stall_cpu</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cache_2wsa_tb/uut/rmem_4byte" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rmem_4byte[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rmem_4byte[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cache_2wsa_tb/uut/count" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">count[3:0]</obj_property>
+      <obj_property name="ObjectShortName">count[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cache_2wsa_tb/uut/we0" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">we0</obj_property>
+      <obj_property name="ObjectShortName">we0</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#0000ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cache_2wsa_tb/uut/we1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">we1</obj_property>
+      <obj_property name="ObjectShortName">we1</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#0000ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cache_2wsa_tb/uut/wet0" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wet0</obj_property>
+      <obj_property name="ObjectShortName">wet0</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#0000ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cache_2wsa_tb/uut/wet1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wet1</obj_property>
+      <obj_property name="ObjectShortName">wet1</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#0000ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cache_2wsa_tb/uut/data_mem" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_mem[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_mem[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cache_2wsa_tb/uut/rdata_byte" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rdata_byte[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rdata_byte[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cache_2wsa_tb/uut/wdata_byte" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">wdata_byte[7:0]</obj_property>
+      <obj_property name="ObjectShortName">wdata_byte[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cache_2wsa_tb/uut/wmem_byte" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">wmem_byte[7:0]</obj_property>
+      <obj_property name="ObjectShortName">wmem_byte[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cache_2wsa_tb/uut/rmem_4byte" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rmem_4byte[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rmem_4byte[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cache_2wsa_tb/uut/wmem_4byte" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">wmem_4byte[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wmem_4byte[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cache_2wsa_tb/uut/count" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">count[3:0]</obj_property>
+      <obj_property name="ObjectShortName">count[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cache_2wsa_tb/uut/update_flag" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">update_flag</obj_property>
+      <obj_property name="ObjectShortName">update_flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cache_2wsa_tb/uut/rdwr" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rdwr</obj_property>
+      <obj_property name="ObjectShortName">rdwr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cache_2wsa_tb/uut/wtag0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">wtag0[13:0]</obj_property>
+      <obj_property name="ObjectShortName">wtag0[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cache_2wsa_tb/uut/wtag1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">wtag1[13:0]</obj_property>
+      <obj_property name="ObjectShortName">wtag1[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cache_2wsa_tb/uut/strtag0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">strtag0[13:0]</obj_property>
+      <obj_property name="ObjectShortName">strtag0[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cache_2wsa_tb/uut/strtag1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">strtag1[13:0]</obj_property>
+      <obj_property name="ObjectShortName">strtag1[13:0]</obj_property>
+   </wvobject>
+</wave_config>

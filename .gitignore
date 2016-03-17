@@ -1,0 +1,9 @@
+work/
+Report_And_Waveforms/
+*.wlf
+*.mti
+*.v~
+*.*~
+*.swp
+*~
+*.zip

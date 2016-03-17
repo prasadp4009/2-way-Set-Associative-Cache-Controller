@@ -1,0 +1,27 @@
+Running: D:\Softwares\Hardware\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/Dadu/OneDrive/Courses/ECE585_MSD_Teuscher/Homework/Homework4/IP/simX/Cache_2wsa/cache_2wsa_tb_isim_beh.exe -prj C:/Users/Dadu/OneDrive/Courses/ECE585_MSD_Teuscher/Homework/Homework4/IP/simX/Cache_2wsa/cache_2wsa_tb_beh.prj work.cache_2wsa_tb work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/Dadu/OneDrive/Courses/ECE585_MSD_Teuscher/Homework/Homework4/IP/simX/Cache_2wsa/../../rtl/ram_sync_read_t1.v" into library work
+Analyzing Verilog file "C:/Users/Dadu/OneDrive/Courses/ECE585_MSD_Teuscher/Homework/Homework4/IP/simX/Cache_2wsa/../../rtl/ram_sync_read_t0.v" into library work
+Analyzing Verilog file "C:/Users/Dadu/OneDrive/Courses/ECE585_MSD_Teuscher/Homework/Homework4/IP/simX/Cache_2wsa/../../rtl/ram_sync_read_d1.v" into library work
+Analyzing Verilog file "C:/Users/Dadu/OneDrive/Courses/ECE585_MSD_Teuscher/Homework/Homework4/IP/simX/Cache_2wsa/../../rtl/ram_sync_read_d0.v" into library work
+Analyzing Verilog file "C:/Users/Dadu/OneDrive/Courses/ECE585_MSD_Teuscher/Homework/Homework4/IP/simX/Cache_2wsa/../../rtl/cache_2wsa.v" into library work
+Analyzing Verilog file "C:/Users/Dadu/OneDrive/Courses/ECE585_MSD_Teuscher/Homework/Homework4/IP/simX/Cache_2wsa/cache_2wsa_tb.v" into library work
+Analyzing Verilog file "D:/Softwares/Hardware/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module ram_sync_read_t0(AWIDTH=3,DWIDTH...
+Compiling module ram_sync_read_t1(AWIDTH=3,DWIDTH...
+Compiling module ram_sync_read_d0(AWIDTH=3,DWIDTH...
+Compiling module ram_sync_read_d1(AWIDTH=3,DWIDTH...
+Compiling module cache_2wsa
+Compiling module cache_2wsa_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 4 sub-compilation(s) to finish...
+Compiled 7 Verilog Units
+Built simulation executable C:/Users/Dadu/OneDrive/Courses/ECE585_MSD_Teuscher/Homework/Homework4/IP/simX/Cache_2wsa/cache_2wsa_tb_isim_beh.exe
+Fuse Memory Usage: 28676 KB
+Fuse CPU Usage: 2015 ms

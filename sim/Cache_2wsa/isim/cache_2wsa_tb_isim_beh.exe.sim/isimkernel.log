@@ -1,0 +1,30 @@
+Command line:
+   cache_2wsa_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  51491
+
+Thu Nov 12 19:54:21 2015
+
+
+ Elaboration Time: 0.171875 sec
+
+ Current Memory Usage: 365.605 Meg
+
+ Total Signals          : 67
+ Total Nets             : 300
+ Total Signal Drivers   : 47
+ Total Blocks           : 8
+ Total Primitive Blocks : 6
+ Total Processes        : 59
+ Total Traceable Variables  : 90
+ Total Scalar Nets and Variables : 2194
+Total Line Count : 406
+Total Line Count : 406
+
+ Total Simulation Time: 1.23438 sec
+
+ Current Memory Usage: 365.605 Meg
+
+Thu Nov 12 20:18:12 2015
+

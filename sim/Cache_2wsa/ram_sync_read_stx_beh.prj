@@ -1,0 +1,2 @@
+verilog isim_temp "../../rtl/ram_sync_read.v"
+verilog isim_temp "D:/Softwares/Hardware/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

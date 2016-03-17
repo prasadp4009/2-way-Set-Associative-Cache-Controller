@@ -1,0 +1,7 @@
+verilog work "../../rtl/ram_sync_read_t1.v"
+verilog work "../../rtl/ram_sync_read_t0.v"
+verilog work "../../rtl/ram_sync_read_d1.v"
+verilog work "../../rtl/ram_sync_read_d0.v"
+verilog work "../../rtl/cache_2wsa.v"
+verilog work "cache_2wsa_tb.v"
+verilog work "D:/Softwares/Hardware/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

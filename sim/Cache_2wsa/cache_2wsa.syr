@@ -1,0 +1,702 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.51 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.52 secs
+ 
+--> Reading design: cache_2wsa.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "cache_2wsa.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "cache_2wsa"
+Output Format                      : NGC
+Target Device                      : xc6slx45t-3-fgg484
+
+---- Source Options
+Top Module Name                    : cache_2wsa
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\Dadu\OneDrive\Courses\ECE585_MSD_Teuscher\Homework\Homework4\IP\rtl\ram_sync_read_t1.v" into library work
+Parsing module <ram_sync_read_t1>.
+Analyzing Verilog file "C:\Users\Dadu\OneDrive\Courses\ECE585_MSD_Teuscher\Homework\Homework4\IP\rtl\ram_sync_read_t0.v" into library work
+Parsing module <ram_sync_read_t0>.
+Analyzing Verilog file "C:\Users\Dadu\OneDrive\Courses\ECE585_MSD_Teuscher\Homework\Homework4\IP\rtl\ram_sync_read_d1.v" into library work
+Parsing module <ram_sync_read_d1>.
+Analyzing Verilog file "C:\Users\Dadu\OneDrive\Courses\ECE585_MSD_Teuscher\Homework\Homework4\IP\rtl\ram_sync_read_d0.v" into library work
+Parsing module <ram_sync_read_d0>.
+Analyzing Verilog file "C:\Users\Dadu\OneDrive\Courses\ECE585_MSD_Teuscher\Homework\Homework4\IP\rtl\cache_2wsa.v" into library work
+Parsing module <cache_2wsa>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <cache_2wsa>.
+WARNING:HDLCompiler:1127 - "C:\Users\Dadu\OneDrive\Courses\ECE585_MSD_Teuscher\Homework\Homework4\IP\rtl\cache_2wsa.v" Line 162: Assignment to rdata ignored, since the identifier is never used
+
+Elaborating module <ram_sync_read_t0(AWIDTH=3,DWIDTH=14)>.
+Reading initialization file \"tagRam0.txt\".
+
+Elaborating module <ram_sync_read_t1(AWIDTH=3,DWIDTH=14)>.
+Reading initialization file \"tagRam1.txt\".
+
+Elaborating module <ram_sync_read_d0(AWIDTH=3,DWIDTH=32)>.
+Reading initialization file \"dram0.txt\".
+
+Elaborating module <ram_sync_read_d1(AWIDTH=3,DWIDTH=32)>.
+Reading initialization file \"dram1.txt\".
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <cache_2wsa>.
+    Related source file is "C:\Users\Dadu\OneDrive\Courses\ECE585_MSD_Teuscher\Homework\Homework4\IP\rtl\cache_2wsa.v".
+        AWIDTH = 16
+        DWIDTH = 8
+        CACHELINES = 16
+        BLOCKSIZE = 4
+        NUMOFSETS = 8
+        VALIDBIT = 1
+        DIRTYBIT = 1
+        USEDBIT = 1
+        TAGWIDTH = 11
+    Found 1-bit register for signal <rdwr>.
+    Found 16-bit register for signal <addr_mem>.
+    Found 16-bit register for signal <addrlatch>.
+    Found 3-bit register for signal <state>.
+    Found 8-bit register for signal <rdata_byte>.
+    Found 8-bit register for signal <wdata_byte>.
+    Found 8-bit register for signal <wmem_byte>.
+    Found 32-bit register for signal <rmem_4byte>.
+    Found 32-bit register for signal <wmem_4byte>.
+    Found 32-bit register for signal <wdata>.
+    Found 32-bit register for signal <strdata0>.
+    Found 32-bit register for signal <strdata1>.
+    Found 14-bit register for signal <wtag0>.
+    Found 14-bit register for signal <wtag1>.
+    Found 14-bit register for signal <strtag0>.
+    Found 14-bit register for signal <strtag1>.
+    Found 2-bit register for signal <count>.
+    Found 1-bit register for signal <rd_mem>.
+    Found 1-bit register for signal <wr_mem>.
+    Found 1-bit register for signal <stall_cpu>.
+    Found 1-bit register for signal <we0>.
+    Found 1-bit register for signal <we1>.
+    Found 1-bit register for signal <wet0>.
+    Found 1-bit register for signal <wet1>.
+    Found 1-bit register for signal <update_flag>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 7                                              |
+    | Transitions        | 26                                             |
+    | Inputs             | 10                                             |
+    | Outputs            | 9                                              |
+    | Clock              | clock (rising_edge)                            |
+    | Reset              | reset_n (negative)                             |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 000                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 2-bit adder for signal <count[1]_GND_1_o_add_61_OUT> created at line 428.
+    Found 32-bit 4-to-1 multiplexer for signal <bytsel[1]_wdata_byte[7]_wide_mux_39_OUT> created at line 312.
+    Found 32-bit 4-to-1 multiplexer for signal <bytsel[1]_wdata_byte[7]_wide_mux_40_OUT> created at line 332.
+    Found 8-bit 4-to-1 multiplexer for signal <bytew0> created at line 116.
+    Found 8-bit 4-to-1 multiplexer for signal <bytew1> created at line 117.
+    Found 1-bit tristate buffer for signal <data_cpu<7>> created at line 157
+    Found 1-bit tristate buffer for signal <data_cpu<6>> created at line 157
+    Found 1-bit tristate buffer for signal <data_cpu<5>> created at line 157
+    Found 1-bit tristate buffer for signal <data_cpu<4>> created at line 157
+    Found 1-bit tristate buffer for signal <data_cpu<3>> created at line 157
+    Found 1-bit tristate buffer for signal <data_cpu<2>> created at line 157
+    Found 1-bit tristate buffer for signal <data_cpu<1>> created at line 157
+    Found 1-bit tristate buffer for signal <data_cpu<0>> created at line 157
+    Found 1-bit tristate buffer for signal <data_mem<7>> created at line 158
+    Found 1-bit tristate buffer for signal <data_mem<6>> created at line 158
+    Found 1-bit tristate buffer for signal <data_mem<5>> created at line 158
+    Found 1-bit tristate buffer for signal <data_mem<4>> created at line 158
+    Found 1-bit tristate buffer for signal <data_mem<3>> created at line 158
+    Found 1-bit tristate buffer for signal <data_mem<2>> created at line 158
+    Found 1-bit tristate buffer for signal <data_mem<1>> created at line 158
+    Found 1-bit tristate buffer for signal <data_mem<0>> created at line 158
+    Found 11-bit comparator equal for signal <tagdata[10]_rtag0[10]_equal_7_o> created at line 150
+    Found 11-bit comparator equal for signal <tagdata[10]_rtag1[10]_equal_8_o> created at line 151
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred 283 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred  74 Multiplexer(s).
+	inferred  16 Tristate(s).
+	inferred   1 Finite State Machine(s).
+Unit <cache_2wsa> synthesized.
+
+Synthesizing Unit <ram_sync_read_t0>.
+    Related source file is "C:\Users\Dadu\OneDrive\Courses\ECE585_MSD_Teuscher\Homework\Homework4\IP\rtl\ram_sync_read_t0.v".
+        AWIDTH = 3
+        DWIDTH = 14
+    Found 8x14-bit dual-port RAM <Mram_mem_array> for signal <mem_array>.
+    Found 3-bit register for signal <rd_addr>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   3 D-type flip-flop(s).
+Unit <ram_sync_read_t0> synthesized.
+
+Synthesizing Unit <ram_sync_read_t1>.
+    Related source file is "C:\Users\Dadu\OneDrive\Courses\ECE585_MSD_Teuscher\Homework\Homework4\IP\rtl\ram_sync_read_t1.v".
+        AWIDTH = 3
+        DWIDTH = 14
+    Found 8x14-bit dual-port RAM <Mram_mem_array> for signal <mem_array>.
+    Found 3-bit register for signal <rd_addr>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   3 D-type flip-flop(s).
+Unit <ram_sync_read_t1> synthesized.
+
+Synthesizing Unit <ram_sync_read_d0>.
+    Related source file is "C:\Users\Dadu\OneDrive\Courses\ECE585_MSD_Teuscher\Homework\Homework4\IP\rtl\ram_sync_read_d0.v".
+        AWIDTH = 3
+        DWIDTH = 32
+    Found 8x32-bit dual-port RAM <Mram_mem_array> for signal <mem_array>.
+    Found 3-bit register for signal <rd_addr>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   3 D-type flip-flop(s).
+Unit <ram_sync_read_d0> synthesized.
+
+Synthesizing Unit <ram_sync_read_d1>.
+    Related source file is "C:\Users\Dadu\OneDrive\Courses\ECE585_MSD_Teuscher\Homework\Homework4\IP\rtl\ram_sync_read_d1.v".
+        AWIDTH = 3
+        DWIDTH = 32
+    Found 8x32-bit dual-port RAM <Mram_mem_array> for signal <mem_array>.
+    Found 3-bit register for signal <rd_addr>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   3 D-type flip-flop(s).
+Unit <ram_sync_read_d1> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 4
+ 8x14-bit dual-port RAM                                : 2
+ 8x32-bit dual-port RAM                                : 2
+# Adders/Subtractors                                   : 1
+ 2-bit adder                                           : 1
+# Registers                                            : 28
+ 1-bit register                                        : 9
+ 14-bit register                                       : 4
+ 16-bit register                                       : 2
+ 2-bit register                                        : 1
+ 3-bit register                                        : 4
+ 32-bit register                                       : 5
+ 8-bit register                                        : 3
+# Comparators                                          : 2
+ 11-bit comparator equal                               : 2
+# Multiplexers                                         : 74
+ 1-bit 2-to-1 multiplexer                              : 34
+ 11-bit 2-to-1 multiplexer                             : 1
+ 14-bit 2-to-1 multiplexer                             : 12
+ 16-bit 2-to-1 multiplexer                             : 3
+ 2-bit 2-to-1 multiplexer                              : 2
+ 3-bit 2-to-1 multiplexer                              : 1
+ 32-bit 2-to-1 multiplexer                             : 11
+ 32-bit 4-to-1 multiplexer                             : 2
+ 8-bit 2-to-1 multiplexer                              : 6
+ 8-bit 4-to-1 multiplexer                              : 2
+# Tristates                                            : 16
+ 1-bit tristate buffer                                 : 16
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:2677 - Node <strtag0_11> of sequential type is unconnected in block <cache_2wsa>.
+WARNING:Xst:2677 - Node <strtag0_12> of sequential type is unconnected in block <cache_2wsa>.
+WARNING:Xst:2677 - Node <strtag0_13> of sequential type is unconnected in block <cache_2wsa>.
+WARNING:Xst:2677 - Node <strtag1_11> of sequential type is unconnected in block <cache_2wsa>.
+WARNING:Xst:2677 - Node <strtag1_12> of sequential type is unconnected in block <cache_2wsa>.
+WARNING:Xst:2677 - Node <strtag1_13> of sequential type is unconnected in block <cache_2wsa>.
+
+Synthesizing (advanced) Unit <cache_2wsa>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <cache_2wsa> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ram_sync_read_d0>.
+INFO:Xst:3231 - The small RAM <Mram_mem_array> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 32-bit                     |          |
+    |     clkA           | connected to signal <clock>         | rise     |
+    |     weA            | connected to signal <we>            | high     |
+    |     addrA          | connected to signal <addr>          |          |
+    |     diA            | connected to signal <din>           |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 8-word x 32-bit                     |          |
+    |     addrB          | connected to signal <rd_addr>       |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <ram_sync_read_d0> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ram_sync_read_d1>.
+INFO:Xst:3231 - The small RAM <Mram_mem_array> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 32-bit                     |          |
+    |     clkA           | connected to signal <clock>         | rise     |
+    |     weA            | connected to signal <we>            | high     |
+    |     addrA          | connected to signal <addr>          |          |
+    |     diA            | connected to signal <din>           |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 8-word x 32-bit                     |          |
+    |     addrB          | connected to signal <rd_addr>       |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <ram_sync_read_d1> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ram_sync_read_t0>.
+INFO:Xst:3231 - The small RAM <Mram_mem_array> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 14-bit                     |          |
+    |     clkA           | connected to signal <clock>         | rise     |
+    |     weA            | connected to signal <we>            | high     |
+    |     addrA          | connected to signal <addr>          |          |
+    |     diA            | connected to signal <din>           |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 8-word x 14-bit                     |          |
+    |     addrB          | connected to signal <rd_addr>       |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <ram_sync_read_t0> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ram_sync_read_t1>.
+INFO:Xst:3231 - The small RAM <Mram_mem_array> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 14-bit                     |          |
+    |     clkA           | connected to signal <clock>         | rise     |
+    |     weA            | connected to signal <we>            | high     |
+    |     addrA          | connected to signal <addr>          |          |
+    |     diA            | connected to signal <din>           |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 8-word x 14-bit                     |          |
+    |     addrB          | connected to signal <rd_addr>       |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <ram_sync_read_t1> synthesized (advanced).
+WARNING:Xst:2677 - Node <strtag0_11> of sequential type is unconnected in block <cache_2wsa>.
+WARNING:Xst:2677 - Node <strtag0_12> of sequential type is unconnected in block <cache_2wsa>.
+WARNING:Xst:2677 - Node <strtag0_13> of sequential type is unconnected in block <cache_2wsa>.
+WARNING:Xst:2677 - Node <strtag1_11> of sequential type is unconnected in block <cache_2wsa>.
+WARNING:Xst:2677 - Node <strtag1_12> of sequential type is unconnected in block <cache_2wsa>.
+WARNING:Xst:2677 - Node <strtag1_13> of sequential type is unconnected in block <cache_2wsa>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 4
+ 8x14-bit dual-port distributed RAM                    : 2
+ 8x32-bit dual-port distributed RAM                    : 2
+# Counters                                             : 1
+ 2-bit up counter                                      : 1
+# Registers                                            : 287
+ Flip-Flops                                            : 287
+# Comparators                                          : 2
+ 11-bit comparator equal                               : 2
+# Multiplexers                                         : 73
+ 1-bit 2-to-1 multiplexer                              : 34
+ 11-bit 2-to-1 multiplexer                             : 1
+ 14-bit 2-to-1 multiplexer                             : 12
+ 16-bit 2-to-1 multiplexer                             : 3
+ 2-bit 2-to-1 multiplexer                              : 1
+ 3-bit 2-to-1 multiplexer                              : 1
+ 32-bit 2-to-1 multiplexer                             : 11
+ 32-bit 4-to-1 multiplexer                             : 2
+ 8-bit 2-to-1 multiplexer                              : 6
+ 8-bit 4-to-1 multiplexer                              : 2
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <tr0/rd_addr_0> in Unit <cache_2wsa> is equivalent to the following 3 FFs/Latches, which will be removed : <tr1/rd_addr_0> <dr0/rd_addr_0> <dr1/rd_addr_0> 
+INFO:Xst:2261 - The FF/Latch <tr0/rd_addr_1> in Unit <cache_2wsa> is equivalent to the following 3 FFs/Latches, which will be removed : <tr1/rd_addr_1> <dr0/rd_addr_1> <dr1/rd_addr_1> 
+INFO:Xst:2261 - The FF/Latch <tr0/rd_addr_2> in Unit <cache_2wsa> is equivalent to the following 3 FFs/Latches, which will be removed : <tr1/rd_addr_2> <dr0/rd_addr_2> <dr1/rd_addr_2> 
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <state[1:3]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000
+ 010   | 010
+ 001   | 001
+ 011   | 011
+ 101   | 101
+ 100   | 100
+ 110   | 110
+-------------------
+WARNING:Xst:1710 - FF/Latch <addr_mem_0> (without init value) has a constant value of 0 in block <cache_2wsa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addr_mem_1> (without init value) has a constant value of 0 in block <cache_2wsa>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <wtag1_12> of sequential type is unconnected in block <cache_2wsa>.
+WARNING:Xst:2677 - Node <tr1/Mram_mem_array31> of sequential type is unconnected in block <cache_2wsa>.
+INFO:Xst:2261 - The FF/Latch <wet0> in Unit <cache_2wsa> is equivalent to the following FF/Latch, which will be removed : <wet1> 
+
+Optimizing unit <cache_2wsa> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block cache_2wsa, actual ratio is 1.
+FlipFlop state_FSM_FFd1 has been replicated 2 time(s)
+FlipFlop state_FSM_FFd2 has been replicated 2 time(s)
+FlipFlop state_FSM_FFd3 has been replicated 2 time(s)
+FlipFlop tr0/rd_addr_0 has been replicated 1 time(s)
+FlipFlop tr0/rd_addr_1 has been replicated 1 time(s)
+FlipFlop tr0/rd_addr_2 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 288
+ Flip-Flops                                            : 288
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : cache_2wsa.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 445
+#      GND                         : 1
+#      INV                         : 3
+#      LUT2                        : 28
+#      LUT3                        : 99
+#      LUT4                        : 98
+#      LUT5                        : 78
+#      LUT6                        : 136
+#      MUXF7                       : 2
+# FlipFlops/Latches                : 288
+#      FD                          : 6
+#      FDC                         : 122
+#      FDCE                        : 159
+#      FDPE                        : 1
+# RAMS                             : 21
+#      RAM16X1D                    : 7
+#      RAM32M                      : 14
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 55
+#      IBUF                        : 20
+#      IOBUF                       : 16
+#      OBUF                        : 19
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45tfgg484-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             288  out of  54576     0%  
+ Number of Slice LUTs:                  512  out of  27288     1%  
+    Number used as Logic:               442  out of  27288     1%  
+    Number used as Memory:               70  out of   6408     1%  
+       Number used as RAM:               70
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    518
+   Number with an unused Flip Flop:     230  out of    518    44%  
+   Number with an unused LUT:             6  out of    518     1%  
+   Number of fully used LUT-FF pairs:   282  out of    518    54%  
+   Number of unique control sets:        18
+
+IO Utilization: 
+ Number of IOs:                          56
+ Number of bonded IOBs:                  56  out of    296    18%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clock                              | BUFGP                  | 309   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 7.199ns (Maximum Frequency: 138.915MHz)
+   Minimum input arrival time before clock: 7.848ns
+   Maximum output required time after clock: 4.642ns
+   Maximum combinational path delay: 5.602ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock'
+  Clock period: 7.199ns (frequency: 138.915MHz)
+  Total number of paths / destination ports: 25728 / 644
+-------------------------------------------------------------------------
+Delay:               7.199ns (Levels of Logic = 5)
+  Source:            state_FSM_FFd2_1 (FF)
+  Destination:       wdata_0 (FF)
+  Source Clock:      clock rising
+  Destination Clock: clock rising
+
+  Data Path: state_FSM_FFd2_1 to wdata_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             10   0.447   1.085  state_FSM_FFd2_1 (state_FSM_FFd2_1)
+     LUT5:I2->O            2   0.205   0.721  Mmux_tagdata61 (tagdata<4>)
+     LUT4:I2->O            2   0.203   0.864  hit_w03 (hit_w03)
+     LUT6:I2->O            2   0.203   0.617  hit_w05_1 (hit_w05)
+     LUT6:I5->O            9   0.205   0.830  hit5 (hit)
+     LUT6:I5->O           32   0.205   1.291  _n0492_inv1 (_n0492_inv)
+     FDCE:CE                   0.322          wdata_0
+    ----------------------------------------
+    Total                      7.199ns (1.790ns logic, 5.409ns route)
+                                       (24.9% logic, 75.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clock'
+  Total number of paths / destination ports: 4715 / 645
+-------------------------------------------------------------------------
+Offset:              7.848ns (Levels of Logic = 6)
+  Source:            addr_cpu<9> (PAD)
+  Destination:       wdata_0 (FF)
+  Destination Clock: clock rising
+
+  Data Path: addr_cpu<9> to wdata_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.222   0.961  addr_cpu_9_IBUF (addr_cpu_9_IBUF)
+     LUT5:I0->O            2   0.203   0.721  Mmux_tagdata61 (tagdata<4>)
+     LUT4:I2->O            2   0.203   0.864  hit_w03 (hit_w03)
+     LUT6:I2->O            2   0.203   0.617  hit_w05_1 (hit_w05)
+     LUT6:I5->O            9   0.205   0.830  hit5 (hit)
+     LUT6:I5->O           32   0.205   1.291  _n0492_inv1 (_n0492_inv)
+     FDCE:CE                   0.322          wdata_0
+    ----------------------------------------
+    Total                      7.848ns (2.563ns logic, 5.285ns route)
+                                       (32.7% logic, 67.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock'
+  Total number of paths / destination ports: 41 / 33
+-------------------------------------------------------------------------
+Offset:              4.642ns (Levels of Logic = 2)
+  Source:            wr_mem (FF)
+  Destination:       data_mem<7> (PAD)
+  Source Clock:      clock rising
+
+  Data Path: wr_mem to data_mem<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.447   0.616  wr_mem (wr_mem_OBUF)
+     INV:I->O              8   0.206   0.802  wr_mem_inv1_INV_0 (wr_mem_inv)
+     IOBUF:T->IO               2.571          data_mem_7_IOBUF (data_mem<7>)
+    ----------------------------------------
+    Total                      4.642ns (3.224ns logic, 1.418ns route)
+                                       (69.5% logic, 30.5% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Delay:               5.602ns (Levels of Logic = 3)
+  Source:            rd_cpu (PAD)
+  Destination:       data_cpu<7> (PAD)
+
+  Data Path: rd_cpu to data_cpu<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   1.222   0.802  rd_cpu_IBUF (rd_cpu_IBUF)
+     INV:I->O              8   0.206   0.802  rd_cpu_inv1_INV_0 (rd_cpu_inv)
+     IOBUF:T->IO               2.571          data_cpu_7_IOBUF (data_cpu<7>)
+    ----------------------------------------
+    Total                      5.602ns (3.999ns logic, 1.603ns route)
+                                       (71.4% logic, 28.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clock
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clock          |    7.199|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 51.00 secs
+Total CPU time to Xst completion: 51.69 secs
+ 
+--> 
+
+Total memory usage is 275076 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   17 (   0 filtered)
+Number of infos    :    8 (   0 filtered)
+

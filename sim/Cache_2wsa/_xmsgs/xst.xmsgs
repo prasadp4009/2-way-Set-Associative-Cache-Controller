@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Users\Dadu\OneDrive\Courses\ECE585_MSD_Teuscher\Homework\Homework4\IP\rtl\cache_2wsa.v" Line 162: Assignment to <arg fmt="%s" index="1">rdata</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">strtag0_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cache_2wsa</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">strtag0_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cache_2wsa</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">strtag0_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cache_2wsa</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">strtag1_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cache_2wsa</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">strtag1_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cache_2wsa</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">strtag1_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cache_2wsa</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="3231" delta="new" >The small RAM &lt;<arg fmt="%s" index="1">Mram_mem_array</arg>&gt; will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+</msg>
+
+<msg type="info" file="Xst" num="3231" delta="new" >The small RAM &lt;<arg fmt="%s" index="1">Mram_mem_array</arg>&gt; will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+</msg>
+
+<msg type="info" file="Xst" num="3231" delta="new" >The small RAM &lt;<arg fmt="%s" index="1">Mram_mem_array</arg>&gt; will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+</msg>
+
+<msg type="info" file="Xst" num="3231" delta="new" >The small RAM &lt;<arg fmt="%s" index="1">Mram_mem_array</arg>&gt; will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">strtag0_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cache_2wsa</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">strtag0_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cache_2wsa</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">strtag0_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cache_2wsa</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">strtag1_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cache_2wsa</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">strtag1_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cache_2wsa</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">strtag1_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cache_2wsa</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">tr0/rd_addr_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">cache_2wsa</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;tr1/rd_addr_0&gt; &lt;dr0/rd_addr_0&gt; &lt;dr1/rd_addr_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">tr0/rd_addr_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">cache_2wsa</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;tr1/rd_addr_1&gt; &lt;dr0/rd_addr_1&gt; &lt;dr1/rd_addr_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">tr0/rd_addr_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">cache_2wsa</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;tr1/rd_addr_2&gt; &lt;dr0/rd_addr_2&gt; &lt;dr1/rd_addr_2&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">addr_mem_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cache_2wsa</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">addr_mem_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cache_2wsa</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">wtag1_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cache_2wsa</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">tr1/Mram_mem_array31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cache_2wsa</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">wet0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">cache_2wsa</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;wet1&gt; </arg>
+</msg>
+
+</messages>
+
